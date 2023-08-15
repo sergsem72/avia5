@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sergsem72/avia5/style3.css">
+    <script src="https://cdn.jsdelivr.net/gh/sergsem72/avia5/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/sergsem72/avia5@7a1efa4848dec9a043fe9b5846abfeeaaf0a90ad/script3.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="overlay">
+        <button class="custom start-game">START GAME</button>
+    </div>
+
+    <div class="game-holder" id="gameHolder">
+        <div class="header">
+            <h1><span>the</span>Aviator</h1>
+            <h2>от винта</h2>
+            <div class="score" id="score">
+                <div class="score_content" id="level">
+                    <div class="score_label">level</div>
+                    <div class="score_value score_value--level" id="levelValue">1</div>
+                    <svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+                        <circle id="levelCircleBgr" cx="100" cy="100" r="80" fill="none" stroke="#d1b790" stroke-width="24px"/>
+                        <circle id="levelCircleStroke" cx="100" cy="100" r="80" fill="none" stroke="#68c3c0" stroke-width="14px" stroke-dasharray="502"/>
+                    </svg>
+                </div>
+                <div class="score_content" id="dist">
+                    <div class="score_label">distance</div>
+                    <div class="score_value score_value--dist" id="distValue">000</div>
+                </div>
+                <div class="score_content" id="energy">
+                    <div class="score_label">energy</div>
+                    <div class="score_value score_value--energy" id="energyValue">
+                        <div class="energy-bar" id="energyBar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="world" id="world"></div>     
+        <div class="message message--replay" id="replayMessage">Click to Replay</div>
+        <div class="message message--instructions" id="instructions">Grab the blue pills <span>Avoid the red ones</span></div>
+        
+    </div>
+
+
+
+<nav class="meta">
+<a class="recl" href="https://www.facebook.com/search/top?q=it-dreams"> <img src="Group 3.png" width="60%" >  </a>
+<a class="recl" href="https://www.instagram.com/it.dreams.kh/"> <img src="Group2.png" width="60%" >  </a>
+<a class="demo-link" href="part1.html"> version 1</a>
+<a class="demo-link" href="part2.html"> version 2</a>
+
+</nav>
+
+</body>
+</html>
